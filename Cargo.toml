@@ -1,0 +1,13 @@
+[package]
+name = "hd2tcg"
+version = "0.1.0"
+edition = "2021"
+description = "Texture cache files (.DX1 .DX2 .DX3 .565 .555) for Hidden & Dangerous 2's unmodified LS3DF.dll"
+publish = false
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
